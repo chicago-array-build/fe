@@ -19,6 +19,10 @@ class SignUp extends React.Component {
     signUp = (event) => {
         event.preventDefault()
         this.props.signUp(this.state)
+        this.setState({
+            username: '',
+            password: ''
+        })
     }
 
     render(){
